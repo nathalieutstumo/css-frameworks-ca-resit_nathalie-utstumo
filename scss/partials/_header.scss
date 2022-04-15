@@ -1,0 +1,129 @@
+.navbar-brand {
+  font-family: $logo-font;
+  font-weight: $logo-font-weight;
+  font-style: $logo-font-style;
+  color: $logo-color !important;
+  height: 50px;
+  margin-top: 10px;
+}
+
+header {
+  width: 100%;
+  background-color: #efefef;
+}
+
+nav {
+  width: 100%;
+  display: inline-block;
+}
+
+.container-fluid {
+  width: 90%;
+  margin: auto;
+  height: 50px;
+}
+
+// .nav-tab {
+// }
+
+// .tab-content {
+
+// }
+
+.form-control {
+  margin-right: -5px !important;
+}
+
+.btn-outline-success {
+  color: white;
+  background-color: $logo-color;
+  border: none;
+}
+
+.collapse {
+  width: 100%;
+}
+
+.d-flex {
+  margin-left: 600px !important;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: #0a0a0a;
+  font-family: $regular-text-font;
+  font-size: 1rem;
+}
+
+.nav-item .active {
+  border: none !important;
+  width: 78px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: white solid 2px;
+}
+
+.nav-item .tab:hover {
+  border: $logo-color 2px solid;
+  border-radius: 5px;
+  height: 40px;
+}
+
+@media (max-width: 1167px) {
+  nav {
+    width: 100%;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .collapse {
+    width: 100%;
+  }
+
+  .collapse .nav-tabs {
+    display: block;
+    width: 100%;
+  }
+
+  .collapse li.nav-item {
+    display: flex;
+    justify-content: center;
+    font-size: 1.125rem;
+  }
+
+  .nav-item .active {
+    width: 100%;
+    height: 40px;
+  }
+
+  .container-fluid {
+    width: 100%;
+    margin: auto;
+  }
+  .navbar-brand {
+    margin-left: 55px;
+    margin-top: 10px;
+  }
+
+  .navbar-collapse {
+    background-color: #efefef;
+    display: block;
+    height: 150px;
+    z-index: 99;
+    margin-top: -5px;
+    width: 100%;
+  }
+
+  .navbar-collapse button .active {
+    background-color: white;
+  }
+}

@@ -1,0 +1,310 @@
+main {
+  width: 100%;
+  margin: auto;
+  height: 1200px;
+  background-color: #ededed;
+}
+
+.carousel {
+  z-index: -1;
+  position: relative;
+}
+
+.index-info {
+  width: 90%;
+  margin: auto;
+}
+
+.index-info h1 {
+  font-family: $logo-font;
+  color: $logo-color;
+  font-size: 2.125rem;
+  margin-top: 65px;
+}
+
+.index-info p {
+  font-family: $regular-text-font;
+  font-size: 1rem;
+  margin-top: 20px;
+  color: $regular-text-col;
+  width: 85%;
+}
+
+.index-info .text {
+  font-family: $regular-text-font;
+  font-size: 1rem;
+  margin-top: -65px;
+  color: $regular-text-col;
+  width: 87%;
+  margin-bottom: 75px;
+}
+
+.info-card {
+  width: 85%;
+  margin: auto;
+  margin-left: 55px;
+}
+
+.card-tab-one p {
+  font-family: $regular-text-font;
+  color: $regular-text-col;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+* {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+}
+
+.slide-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.slide-container .slide {
+  display: none;
+  width: 100%;
+}
+
+.slide-container .slide.fade {
+  animation: fade 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.slide-container .slide img {
+  width: 100%;
+}
+
+.slide-container .prev,
+.slide-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.slide-container .prev:hover,
+.slide-container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.slide-container .prev {
+  display: none;
+}
+
+.slide-container .next {
+  display: none;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: -90px;
+}
+
+.dots-container .dot {
+  cursor: pointer;
+  margin: 10px;
+  width: 35px;
+  height: 35px;
+  color: #333;
+  border-radius: 0;
+  background-color: white;
+  z-index: 98;
+}
+
+.dots-container .dot.active {
+  background-color: $logo-color;
+}
+
+.nav-tabs {
+  background-color: transparent;
+  border: none;
+}
+
+.card-header button {
+  width: 115px;
+  color: $logo-color;
+  font-family: $regular-text-font;
+}
+
+.card-header {
+  background-color: #efefef;
+  border: none;
+  border-radius: 50;
+}
+
+.tab-content {
+  background-color: white;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  border: white 3px solid;
+  margin-top: 0px;
+  margin-left: 0.5px;
+  width: 1200px;
+  height: 270px;
+  box-shadow: rgba(0, 0, 0, 0.035) 16px 22px 8.6px;
+}
+
+.text-center {
+  border: none;
+}
+
+.tab-pane img {
+  display: flex;
+  justify-content: left;
+  margin-top: 40px;
+  margin-left: 40px;
+  width: 210px;
+  height: auto;
+}
+
+.tab-pane p {
+  margin-left: 275px;
+  width: 820px;
+  margin-top: -145px;
+  text-align: left;
+  color: #767676;
+  font-family: $regular-text-font;
+}
+
+p.share {
+  margin-top: 70px;
+  font-family: $regular-text-font;
+  color: #0a0a0a;
+  font-size: 1rem;
+}
+
+img.fb__logo {
+  width: 25px;
+  height: 25px;
+  margin-top: -40px;
+  margin-left: 340px;
+}
+
+img.twitter__logo {
+  width: 28px;
+  height: 28px;
+  margin-top: -26px;
+  margin-left: 380px;
+}
+
+@media (max-width: 1186px) {
+  main {
+    width: 100%;
+    margin: auto;
+    height: fit-content;
+    background-color: #ededed;
+  }
+
+  .slide img {
+    height: 200px;
+  }
+
+  .index-info h1 {
+    margin-top: 40px;
+  }
+
+  button#first-tab.nav-link {
+    width: 350px;
+    border-bottom: 2px solid !important;
+    border-color: $logo-color !important;
+    color: $logo-color;
+    background-color: white;
+  }
+
+  button#second-tab.nav-link {
+    position: absolute;
+    width: 350px;
+    margin-top: 450px;
+    background-color: white;
+    border-bottom: 1px #ededed solid !important;
+  }
+  button#third-tab.nav-link {
+    position: absolute;
+    width: 350px;
+    margin-top: 493px;
+    background-color: white;
+  }
+
+  .card-header {
+    margin-left: -50px;
+  }
+
+  .tab-content {
+    width: 350px;
+    height: 700px;
+    background-color: #ededed;
+    border: none;
+  }
+
+  .tab-pane p {
+    width: 270px;
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+
+  .tab-pane .share {
+    margin-top: 195px;
+    font-family: $regular-text-font;
+    color: #0a0a0a;
+    font-size: 1rem;
+    position: relative;
+    width: 60px;
+    margin-left: 80px;
+  }
+
+  .tab-pane img.fb__logo {
+    width: 25px;
+    height: 25px;
+    margin-top: -40px;
+    margin-left: 160px;
+    // position: absolute;
+  }
+
+  .tab-pane img.twitter__logo {
+    width: 28px;
+    height: 28px;
+    margin-top: -42px;
+    margin-left: 220px;
+  }
+
+  .tab-content img {
+    margin-top: 185px;
+    position: absolute;
+    margin-left: 65px;
+  }
+
+  .card-header {
+    margin-top: -50px;
+  }
+}

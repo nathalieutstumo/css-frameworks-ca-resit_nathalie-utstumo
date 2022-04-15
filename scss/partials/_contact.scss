@@ -1,0 +1,309 @@
+.contact__main {
+  background-color: #f1f1f1;
+  height: 950px;
+}
+
+.contact-content {
+  width: 560px;
+  height: 800px;
+  margin-left: 85px;
+  background-color: #efefef;
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.055) 6px 6px 2.6px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-h1 {
+  font-family: $headings-font;
+  color: $logo-color;
+  padding-top: 20px;
+  margin-left: 85px;
+  font-size: 2.125rem;
+}
+
+.input-group-text {
+  color: white;
+  background-color: #c7c7c7;
+}
+
+.contact-content input {
+  width: 490px;
+  margin-left: 35px;
+  height: 55px;
+}
+
+.contact-content .input-group {
+  width: 510px;
+  height: 55px;
+}
+
+.contact-content textarea {
+  width: 490px;
+}
+
+.col .form-label {
+  margin-left: 35px;
+  padding-top: 15px;
+  color: #767676;
+  font-size: 1.25rem;
+  font-family: $regular-text-font;
+}
+
+.mb-3 .form-label {
+  margin-left: 35px;
+  padding-top: 15px;
+  color: #767676;
+  font-size: 1.25rem;
+  font-family: $regular-text-font;
+}
+
+#web-label {
+  margin-left: 75px;
+  color: #767676;
+  font-size: 1.25rem;
+  font-family: $regular-text-font;
+}
+
+.message-label {
+  margin-left: 75px;
+  color: #767676;
+  font-size: 1.25rem;
+  font-family: $regular-text-font;
+  margin-bottom: 5px;
+}
+
+textarea {
+  height: 250px;
+}
+
+.container {
+  margin-top: 220px;
+  margin-left: 100px;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 0.9375rem;
+  font-family: $regular-text-font;
+  color: $regular-text-col;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  background-color: $logo-color;
+  border-radius: 5px;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #e283a4 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-color: $logo-color;
+  }
+
+  .container input:checked ~ .checkmark {
+    background-color: $logo-color;
+  }
+
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 15px;
+    height: 30px;
+    border: solid white;
+    border-width: 0 5px 5px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+.container input:checked ~ .checkmark {
+  background-color: $logo-color;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 10px;
+  top: 0px;
+  width: 10px;
+  height: 25px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.submit-btn {
+  margin-top: 25px;
+  width: 490px;
+  height: 55px;
+  font-family: $regular-text-font;
+  color: white;
+  font-size: 1.375rem;
+  background-color: #767676;
+  border-radius: 5px;
+}
+
+.contact-info {
+  width: 810px;
+  height: fit-content;
+  display: flex;
+  justify-content: right;
+  margin-top: -750px;
+}
+
+.space {
+  height: 50px;
+}
+
+.contact-info p {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 1167px) {
+  div.info {
+    display: block;
+    position: absolute;
+    margin-top: -600px;
+    margin-right: 550px;
+  }
+
+  div.info img {
+    margin-left: 10px;
+  }
+
+  .contact-content {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 390px;
+    box-shadow: none;
+  }
+
+  .contact-h1 {
+    margin-top: 590px;
+    margin-left: 45px;
+  }
+
+  .contact-content input {
+    width: 250px;
+    margin-left: 100px;
+    height: 55px;
+  }
+  .mb-3 input {
+    width: 250px;
+    margin-left: 15px;
+    height: 55px;
+  }
+  .contact-content .input-group {
+    width: 320px;
+    height: 55px;
+    margin-right: 50px;
+  }
+
+  .contact-content textarea {
+    width: 250px;
+    margin-left: 0px;
+  }
+
+  div.col {
+    width: 390px;
+    margin-left: -85px;
+  }
+
+  .row {
+    width: 390px;
+    margin-right: 0px;
+  }
+
+  .container {
+    margin-left: 35px;
+  }
+  .col .form-label {
+    margin-left: 100px;
+  }
+
+  .mb-3 .form-label {
+    margin-left: 15px;
+  }
+
+  #web-label {
+    margin-left: 20px;
+  }
+
+  .message-label {
+    margin-left: 25px;
+  }
+
+  .submit-btn {
+    margin-left: 15px;
+    width: 200px;
+  }
+}

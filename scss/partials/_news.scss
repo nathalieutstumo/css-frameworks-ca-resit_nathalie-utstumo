@@ -1,0 +1,98 @@
+.news__main {
+  width: 100%;
+  margin: auto;
+  height: 950px;
+}
+
+.btn-toolbar {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.row-cols-md-4 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.news-content {
+  width: 88%;
+  margin: auto;
+}
+
+.news-h1 {
+  font-family: $headings-font;
+  font-weight: 400;
+  color: $logo-color;
+  font-size: 2rem;
+  padding-top: 10px;
+}
+
+.row-cols-md-4 .card a {
+  margin: auto;
+  text-align: center;
+}
+
+.btn-group .btn {
+  color: $logo-color;
+  background-color: white;
+  border: 1px solid $logo-color;
+  font-family: $regular-text-font;
+}
+
+.btn-group .active {
+  color: white;
+  background-color: $logo-color;
+  border: 1px solid $logo-color;
+  font-family: $regular-text-font;
+}
+
+.news-card {
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  margin: auto;
+}
+
+.col {
+  max-width: 1200px;
+}
+
+.card-body {
+  display: block;
+}
+
+.card-body a {
+  background-image: linear-gradient(to right, $logo-color 85%, grey 15%);
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  border: none;
+  margin: auto;
+}
+
+.card-body a .btn {
+  display: flex;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-family: $regular-text-font;
+  margin-left: 33px;
+}
+
+.card-text {
+  font-family: $regular-text-font;
+  width: 200px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 33px;
+  font-size: 1.125rem;
+}
+
+@media (max-width: 1040px) {
+  .col {
+    width: fit-content;
+  }
+}
